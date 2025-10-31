@@ -2338,34 +2338,6 @@ Data Sources: BGR Mineral Raw Materials Database
             self.root.destroy()
             start_login_system()
 
-# --- Main Execution ---
-def start_login_system():
-    """Initialize the application and start the login system."""
-    print("MineralXAfrica Dashboard - Enhanced Security Edition")
-    print(f"Primary Admin PIN: {PRIMARY_ADMIN_PIN}")
-    
-    # Ensure user file exists
-    initialize_users_file() 
-    
-    # Instead of a splash screen, show a quick info message
-    # Note: This requires a temporary hidden root window
-    temp_root = tk.Tk()
-    temp_root.withdraw() # Hide the temporary window
-    
-    # Show initialization message
-    messagebox.showinfo(
-        "MineralXAfrica Initializing",
-        "Loading application data...\n\n"
-        "Please wait, the login screen will appear shortly.\n"
-        "© 2024 Mineral Analytics Platform"
-    )
-    
-    # Destroy the temporary root
-    temp_root.destroy()
-    
-    # Start the main login system
-    LoginSystem()
 
-if __name__ == "__main__":
-    start_login_system()
+
 
